@@ -1,0 +1,7 @@
+打开cmd窗口，切换到下载redis的目录
+运行：redis-server.exe redis.windows.conf
+另开一个cmd窗口，原来的不要关闭，不然无法访问服务端
+新cmd窗口同样切换到下载redis的目录
+运行：redis-cli.exe -h 127.0.0.1 -p 6379
+设置键值对:set myKey abc；取出键值对:get myKey
+删库：flushall
