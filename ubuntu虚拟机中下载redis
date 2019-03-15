@@ -1,0 +1,35 @@
+step1:
+sudo apt-get install redis-tools
+
+step2:
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.dat
+
+step3:
+sudo vim /etc/apt/sources.list
+
+deb http://mirrors.ustc.edu.cn/ubuntu/ xenial main restricted universe multiverse
+deb http://mirrors.ustc.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
+deb http://mirrors.ustc.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
+deb http://mirrors.ustc.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
+deb http://mirrors.ustc.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
+deb-src http://mirrors.ustc.edu.cn/ubuntu/ xenial main restricted universe multiverse
+deb-src http://mirrors.ustc.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
+deb-src http://mirrors.ustc.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
+deb-src http://mirrors.ustc.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
+deb-src http://mirrors.ustc.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
+
+step4:
+sudo apt-get update
+
+step5:
+sudo apt-get install redis-server
+
+step6:
+检验是否安装成功:redis-cli
+
+step7:
+登录:redis-cli -a passwd(有密码)
+登录:redis-cli(有密码)
+
+
+
