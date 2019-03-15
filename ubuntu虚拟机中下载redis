@@ -31,5 +31,7 @@ step7:
 登录:redis-cli -a passwd(有密码)
 登录:redis-cli(有密码)
 
-
-
+操作：
+set myKey(键名) abc(值)
+get myKey   (取值)
+flushall    (删库)
