@@ -35,3 +35,4 @@ step7:
 set myKey(键名) abc(值)
 get myKey   (取值)
 flushall    (删库)
+
